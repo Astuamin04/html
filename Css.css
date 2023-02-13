@@ -1,0 +1,120 @@
+*, *:before, *:after {
+    text-decoration: none;
+    font-size: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    outline: 1px dashed #ddd;
+}
+
+header, main, aside, footer {
+    outline: 1px dashed #ccc;
+}
+
+h1 { font-size: 3.4em }
+
+h2 { font-size: 2.1em }
+
+p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin: 0.5em 0;
+}
+
+a {
+    color: #007bff;
+    font-size: larger;
+    padding: auto;
+}
+
+a:hover {
+    color: #005bbc;
+}
+
+/* USING FLEXBOX */
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+/* Header Nav */
+header > nav {
+    width: 100%;
+    background-color: #ba8900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > nav > ul {
+    display: flex;
+}
+
+header > nav > ul > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+}
+
+header > nav > ul > li > a:hover {
+    background-color: #dfe61f;
+}
+
+/* Header H1 */
+header > h1 {
+    margin: 1em 0;
+}
+
+/* Main/Aside Layout */
+.content {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+
+ 
+
+main {
+    width: 70%;
+    order: 2;
+}
+
+aside {
+    width: 30%;
+    order: 1;
+    
+
+}
+
+/* Footer */
+footer {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d99c0c;
+}
+
+/* Footer Nav */
+footer > nav > ul {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+}
